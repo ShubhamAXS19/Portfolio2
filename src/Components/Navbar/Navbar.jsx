@@ -4,7 +4,7 @@ import styles from './Navbar.module.css';
 import {BsGithub} from 'react-icons/bs'
 import {MdDarkMode} from 'react-icons/md'
 import {TiThMenu} from 'react-icons/ti'
-
+import SmallNav from '../../img/navicon.png'
 const Navbar = () => {
   return (
     <div className={styles.navbar}>
@@ -20,7 +20,9 @@ const Navbar = () => {
 
           <div className={styles.navicon}>
             <ol>
+              <img src={SmallNav} alt="face"  style={{height:"4rem" , width:"4rem" }} className={styles.smallnavbar}/>
             <li><MdDarkMode size={40} style={{cursor:"pointer"}} onClick = {() => {}}/></li>
+            {/* <li><Link to="/github.com/ShubhamAXS19"><BsGithub  size={30}/></Link></li> */}
             <li><Link to="https://github.com/ShubhamAXS19"><BsGithub  size={30}/></Link></li>
             <li><TiThMenu size={30}/></li>
             </ol>

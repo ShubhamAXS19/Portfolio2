@@ -4,6 +4,10 @@
     font-family: 'Nunito' ,sans-serif;
 }
 
+.app{
+    width: 100%;
+}
+
 a{
     text-decoration: none;
     list-style: none;
