@@ -1,0 +1,45 @@
+.project{
+    background-color: #00193b;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+
+.project h1 {
+    color: white;
+    font-size: 3rem;
+}
+
+.rightdis p {
+    color: white;
+    font-size: 1.5rem;
+    margin-top: 2rem;
+}
+
+.rightdis a  button {
+    /* background-color: rgb(79 70 229/0.4); */
+    margin: 0.1rem;
+    padding: 1rem 2rem;
+    border-radius:2rem ;
+    font-size: 1rem;
+    font-weight: 600;
+    background-color: #00193b;
+    border:2px solid rgb(67, 97, 238);
+    color: white;
+    transition: all 0.5s ;
+    margin-top: 3rem;
+}
+
+.rightdis a button:hover{
+    transform: translateY(-10px);
+    background-color: white;
+    color:rgb(67, 97, 238) ;
+}
+
+
+
+
+
+
+

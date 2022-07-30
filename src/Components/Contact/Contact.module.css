@@ -1,0 +1,65 @@
+
+ .contact{
+    background-color: #00193b;
+    display: flex;
+    justify-content: space-evenly;
+    padding: 7rem ;
+    height: 15rem;
+ }
+
+
+ .icon2{
+    color: #00193b;
+ }
+
+
+ .card{
+   display: flex;
+   /* justify-content: space-evenly; */
+   flex-direction: column;
+   gap: 3rem;
+ }
+
+ .card p{
+    font-size: 2rem;
+    color: #a5a8ab;
+    text-align: center;
+
+ }
+
+ .card a {
+    text-decoration: none;
+    font-size: 3rem;
+    color: #4361ee;
+ }
+
+ .reachout{
+    display: flex;
+    gap: 2rem;
+    justify-content: space-evenly;
+ }
+
+ .reachout a {
+    border: 2px solid rgb(67, 97, 238);
+    color:#a5a8ab ;
+    padding: 0rem 0.7rem;
+    border-radius: 500rem;
+    transition: all 0.5s;
+ }
+
+ .reachout a:hover{
+      transform: translateY(-10px);
+      background-color: white;
+      color:#4361ee;
+ }
+
+
+ @media  screen and (max-width : 768px) {
+   .icon2{
+      display: none;
+   }
+   .icon1{
+      display: none;
+   }
+   
+ }

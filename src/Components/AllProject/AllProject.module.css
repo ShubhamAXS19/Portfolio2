@@ -1,0 +1,58 @@
+.projectlist{
+    background-color: #04052e;
+}
+
+.projectlist h2{
+    color: white;
+    padding-top: 8rem;
+    text-align: center;
+}
+
+.projectlist p{
+    text-align: center;
+    font-size: 100%;
+    color: #a5a8ab;
+}
+
+ button{
+    color: white;
+    font-size: 1.5rem;
+    font-weight: 600;
+    padding: 1rem 2rem 1rem 2rem;
+    background-color: #04052e;
+    border-radius: 2rem;
+    border: 2px solid rgb(67, 97, 238);
+    margin-top: 2rem;
+    margin-left: 32rem;
+    align-self: center;
+
+    /* position: relative; */
+    /* left: 32rem; */
+    transition: all 0.5s;
+}
+
+button:hover{
+    transform: translateY(-10px);
+    background-color: white;
+    color: rgb(67, 97, 238);
+}
+
+
+@media  screen and (max-width : 768px) {
+    button {
+        margin-left: 6rem;
+        transition: all 0.5s;
+    }
+
+    button:hover{
+        transform: translateY(-10px);
+        background-color: white;
+        color: rgb(67, 97, 238);
+    }
+
+    /* .projectlist{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    } */
+}

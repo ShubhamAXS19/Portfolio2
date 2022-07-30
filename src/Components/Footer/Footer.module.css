@@ -1,0 +1,54 @@
+ .footer{
+    display: flex;
+    justify-content: space-between;
+    padding: 2rem 3rem 2rem 3rem;
+    background-color: #21243e;
+ }
+
+
+ .left{
+    display: flex;
+    gap: 2rem;
+}
+
+.left a{
+    color: #a5a8ab;
+    transition: all 0.5s;
+}
+
+.left a:hover{
+    transform: translateY(-10px);
+    color: #4361ee;
+}
+
+.right { 
+    color: #a5a8ab;
+    
+}
+
+
+span {
+    color: white;
+    background-color: #ced4da;
+    border-radius: 1rem;
+    padding: 1rem;
+}
+
+@media  screen and (max-width : 768px) {
+    .footer{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        padding-left:1rem ;
+        padding-right:1rem ;
+    }
+
+    .right{
+        padding-top: 2rem;
+        /* padding-bottom: 1rem; */
+
+    }
+
+    
+}
