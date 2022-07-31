@@ -150,6 +150,12 @@
         flex-direction: column-reverse;
         padding-top: 5rem;
      }
+
+     .leftdis{
+        padding-top: 3rem;
+        padding-bottom: 3rem;
+     }
+     
 }
 
 

@@ -7,13 +7,13 @@ const AllProjects = () => {
   return (
     <div className={styles.projectlist}>
 
+     <div className={styles.gitbtn}>
 
       <h2>Projects</h2>
       <p>Some of my projects</p>
       <p>you may check out github for a more up to date list</p>
 
 
-     <div className={styles.gitbtn}>
      <Link to="/github.com/ShubhamAXS19"> 
       <button> View on Github</button> 
       </Link>

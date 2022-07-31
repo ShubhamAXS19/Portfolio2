@@ -2,6 +2,14 @@
     background-color: #04052e;
 }
 
+.gitbtn{
+    
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
 .projectlist h2{
     color: white;
     padding-top: 8rem;
@@ -23,11 +31,7 @@
     border-radius: 2rem;
     border: 2px solid rgb(67, 97, 238);
     margin-top: 2rem;
-    margin-left: 32rem;
     align-self: center;
-
-    /* position: relative; */
-    /* left: 32rem; */
     transition: all 0.5s;
 }
 
@@ -38,21 +42,16 @@ button:hover{
 }
 
 
+
 @media  screen and (max-width : 768px) {
-    button {
-        margin-left: 6rem;
-        transition: all 0.5s;
-    }
 
-    button:hover{
-        transform: translateY(-10px);
-        background-color: white;
-        color: rgb(67, 97, 238);
-    }
+  .projectlist{
+    padding: 1rem 2rem;
+  }
 
-    /* .projectlist{
-        display: flex;
-        align-items: center;
-        justify-content: center;
-    } */
+  .gitbtn{
+    padding: 1rem 2rem;
+  }
+
+   
 }

@@ -14,7 +14,7 @@
 
     position: relative;
     overflow: hidden;
-    max-width: 40%;
+    max-width: 50%;
     z-index: 1;
 }
 
@@ -25,9 +25,6 @@
     top: 0;
     width: 100%;
     height: 100%;
-    /* background: #e5e5e5; */
-    /* opacity: 0; */
-    /* transition: .3s ease all; */
     transition: all 0.3s;
 }
 
@@ -61,11 +58,11 @@
 }
 
 .cardstack p {
-    background-color:#a5a8ab ;
     padding: 1rem 2rem;
     border-radius: 2.5rem;
     transition: all 0.5s;
-    color: white;
+    /* color: rgb(67, 97, 238); */
+    /* color: black; */
     font-size: 1rem;
     border: 2px solid #fff;
   
@@ -75,18 +72,33 @@
     color:#a5a8ab ;
     padding: 1rem 1rem;
 }
-/* .cardstack p:hover{
-    background-color:#4361ee ;
-} */
+
 
 @media  screen and (max-width : 768px) {
-    .feature{
+
+    .cardstack{
         display: flex;
         flex-direction: column;
         align-items: center;
         justify-content: center;
     }
+
+    .innercard{
+        position: relative;
+    overflow: hidden;
+    max-width: 90%;
+    z-index: 1;
+    }
+
+    .innercard p {
+        font-size: 1rem;
+    }
      
+    .links{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
 } 
 
  
@@ -177,8 +189,7 @@
     
     .cardss{
     display: grid; 
-    justify-content: center;
-    align-items: center;
+    padding-left: 0.8rem;
    grid-template-rows: 1fr 1fr 1fr;
    grid-template-columns: 1fr;
    

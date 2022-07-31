@@ -12,7 +12,7 @@ const Card = () => {
     <div className={styles.carddisplay}>
       <div className={styles.innercard}>
           <img src={Image} alt="projectimage" />
-          <div> 
+          <div className={styles.links}> 
             <Link to="/"> <AiFillGithub size={40} /></Link>
             <Link to="/"> <BiLinkAlt size={40} /></Link>
           </div>
@@ -21,7 +21,6 @@ const Card = () => {
             </p>
             
         <div className={styles.cardstack}>
-          <p>photography</p>
           <p>travel</p>
           <p>winter</p>
         </div>
