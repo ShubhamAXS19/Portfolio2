@@ -61,18 +61,6 @@
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
 @media screen and (min-width:900px){
     .navleft2{
         display: none;
@@ -84,21 +72,39 @@
 }
 
 @media screen and (max-width:900px){    
+    .navbar{
+        width: 100%;
+        position: fixed;
+        top: 0;
+        display: none;
+    }
+    
+    
+    
     .navleft1{
         display: none;
     }
     .navright1{
         display: none;
     }
+    
+
+    .navright2  {
+        width: 50%;
+
+    }
+
     .navright2 ul {
         display: flex;
         align-items: center;
-        justify-content: space-evenly;
+        justify-content: flex-start;
+        padding-right: 5rem;
 
     }
     .navright2 ul li{
         list-style: none;
     }
+
     .navright2 ul li svg{
         margin-left:1rem ;
         margin-right: 1rem;
