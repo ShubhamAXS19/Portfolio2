@@ -1,7 +1,8 @@
 import React from 'react';
 import styles from './AboutMe.module.css';
 import { Link } from 'react-router-dom';
-import Image from '../../img/img.jpg'
+// import Image from '../../img/img.jpg'
+import Cardssss from '../Card/Cardssss'
 const AboutMe = () => {
   return (
     <div className={styles.about}>
@@ -14,11 +15,9 @@ const AboutMe = () => {
         </p>
           <Link to="/"> <button>  View Resume </button> </Link>
       </div>
+      
       <div className={styles.aboutright}>
-          <img src={Image} style={{height:"5rem",width:"10rem"}} alt="" />
-          <img src={Image} style={{height:"5rem",width:"10rem"}} alt="" />
-          <img src={Image} style={{height:"5rem",width:"10rem"}} alt="" />
-          <img src={Image} style={{height:"5rem",width:"10rem"}} alt="" />
+         <Cardssss/>
       </div>
 
     </div>

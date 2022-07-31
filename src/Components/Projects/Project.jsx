@@ -9,10 +9,10 @@ const Project = () => {
       
       
         <div className={styles.leftdis}>
-        <img src={Image1} alt="image1" />
-        <img src={Image1} alt="image2" />
-        <img src={Image1} alt="image3" />
-        <img src={Image1} alt="image4" />
+        <img src={Image1} alt="image1" className={styles.image1}/>
+        <img src={Image1} alt="image2" className={styles.image2}/>
+        <img src={Image1} alt="image3" className={styles.image3}/>
+        <img src={Image1} alt="image4" className={styles.image4}/>
         </div>
 
           <div className={styles.rightdis}>

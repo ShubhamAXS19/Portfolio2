@@ -6,22 +6,22 @@
  }
 
 
- .left{
+ .leftfooter{
     display: flex;
     gap: 2rem;
 }
 
-.left a{
+.leftfooter a{
     color: #a5a8ab;
     transition: all 0.5s;
 }
 
-.left a:hover{
+.leftfooter a:hover{
     transform: translateY(-10px);
     color: #4361ee;
 }
 
-.right { 
+.rightfooter { 
     color: #a5a8ab;
     
 }
@@ -44,7 +44,7 @@ span {
         padding-right:1rem ;
     }
 
-    .right{
+    .rightfooter{
         padding-top: 2rem;
         /* padding-bottom: 1rem; */
 

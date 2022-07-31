@@ -1,85 +1,89 @@
 .navbar{
-    width: 60%;
+    max-width: 100%;
     display: flex;
     align-items: center;
     justify-content: space-between;
+    padding: 1rem 2rem 1rem 2rem;
     background-color: #21243e;
-    padding: 1rem 2rem;
-    border-bottom: 1px solid #a5a8ab;
+    
+    border-bottom: 2px solid rgb(194, 207, 197);
 
-  position: fixed;
+    position: fixed;
   top: 0;
   width: 100%;
 }
 
-
-.navleft ul{
+.navright1 ul{
+    flex: 1;
     display: flex;
-    align-items: center;
-    justify-content: flex-start;
-    gap: 4rem;
-    text-decoration: none;
-
+    align-items:center;
+    justify-content: space-evenly;
+    gap: 3rem;
 }
 
-.navleft li:hover {
-    color:#4361ee ;
-    transition: all 0.5s;
-    padding-bottom: 10px;
-    border-bottom-style: solid;
-    border-bottom-width: 5px;
-    width: fit-content;
-    
-}   
-
-.navicon svg {
-    color: white;
-    transition: all 0.3s;
-
-}
-
-.navicon svg:hover {
-    color:#4361ee ;
-
-}
-
-.navicon li:nth-child(3){
-    justify-self: end;
-}
-
-ol{
-    display: flex;
-    align-items: center;
-    justify-content: flex-end;
-    gap: 2rem;
-    
-}
-
- li{
-    color: white;
-    font-size: 1.5rem;
-    font-weight: 600;
+.navright1 ul li{
     list-style: none;
-    text-decoration: none;
-} 
+    font-size: 1.8rem;
+}
+
+.navright1 ul li a{
+    color: #c2cfc5;
+}
 
 
 
-@media  screen and (max-width : 768px) {
-    .navleft{
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media screen and (min-width:900px){
+    .navleft2{
         display: none;
     }
-     ol {
+    .navright2{
+        display: none;
+    }
+
+}
+
+@media screen and (max-width:900px){    
+    .navleft1{
+        display: none;
+    }
+    .navright1{
+        display: none;
+    }
+    .navright2 ul {
         display: flex;
         align-items: center;
         justify-content: space-evenly;
+
     }
+    .navright2 ul li{
+        list-style: none;
+    }
+    .navright2 ul li svg{
+        margin-left:1rem ;
+        margin-right: 1rem;
+        color: #c2cfc5;
+        transition: all 0.5s;
+    }
+    .navright2 ul li svg:hover{
+        color:rgb(67, 97, 238) ;
+    }
+
 
 }
-
-@media screen and (min-width : 768px)  {
-     .smallnavbar{
-            display: none;
-     }
-    }
- 

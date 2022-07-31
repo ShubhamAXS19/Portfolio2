@@ -10,14 +10,14 @@ import { Link } from 'react-router-dom';
 const Footer = () => {
   return (
     <div className={styles.footer}>
-      <div className={styles.left}>
+      <div className={styles.leftfooter}>
         <Link to="https://twitter.com/i/flow/login"><BsTwitter size={30}/></Link>
         <Link to="/"><SiGmail size={30}/></Link>
         <Link to="https://www.linkedin.com/feed/"><BsLinkedin size={30}/></Link>
         <Link to="https://www.instagram.com/"><FaInstagramSquare size={30}/></Link>
         <Link to="https://www.youtube.com/"><IoLogoYoutube size={30}/></Link>
       </div>
-      <div className={styles.right}>
+      <div className={styles.rightfooter}>
           Copyright &copy; 2022 Shubham V.
       </div>
 

@@ -1,10 +1,13 @@
+.contact{
+   background-color: #00193b;
 
- .contact{
-    background-color: #00193b;
+}
+ .wrapper{
     display: flex;
     justify-content: space-evenly;
     padding: 7rem ;
     height: 15rem;
+    /* margin: 1rem; */
  }
 
 

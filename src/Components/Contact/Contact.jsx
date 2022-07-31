@@ -10,6 +10,7 @@ const Contact = () => {
   return (
     <div className={styles.contact}>
 
+      <div className={styles.wrapper}>
       <div className={styles.icon1}>
           <FaPaperPlane size={100} color="gray"/>
       </div>
@@ -26,6 +27,7 @@ const Contact = () => {
 
         <div className={styles.icon2}>
           <FaPaperPlane size={100} color='rgb(0, 25, 59)'/>
+      </div>
       </div>
     </div>
   )
