@@ -18,8 +18,6 @@ const Card = () => {
           </div>
             <p >
               Lorem ipsum dolor sit amet, consectetur adipisicing elit. 
-              Voluptatibus quia, nulla! Maiores et perferendis eaque, 
-              exercitationem praesentium nihil.
             </p>
             
         <div className={styles.cardstack}>

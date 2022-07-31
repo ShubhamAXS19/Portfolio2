@@ -10,8 +10,7 @@ const Card1 = () => (
     <img src={DataSci} alt="" />
        <h4>Data Science</h4>
         <p>
-        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Possimus, ipsum cupiditate! Blanditiis enim asperiores labore praesentium ipsum nihil maiores quos veniam. Alias eveniet ipsum reiciendis maiores quam laboriosam fugit. Officiis.
-        {/* Making Data Driven Decision to solve your real life problem */}
+        Making Data Driven Decision to solve your real life problem.
       </p>
   </div>
 )
@@ -20,7 +19,9 @@ const Card2 = () => (
   <div className={styles.card2}>
     <img src={WebDev} alt="" />
        <h4>Web Developer</h4>
-      <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Possimus, ipsum cupiditate! Blanditiis enim asperiores labore praesentium ipsum nihil maiores quos veniam. Alias eveniet ipsum reiciendis maiores quam laboriosam fugit. Officiis.
+      <p>
+        React,JavaScript, Sass,Vercel,<br /> Bootstrap,Netlify,<br /> Git, Github ...
+        {/* Lorem ipsum dolor sit amet consectetur adipisicing elit. Recusandae magnam provident dicta ullam fuga modi voluptates? Dolore veniam iusto possimus omnis sequi quo esse nobis maxime amet, non autem dolores. */}
       </p>
   </div>
 )
@@ -29,7 +30,8 @@ const Card3 = () => (
   <div className={styles.card3}>
     <img src={uiux} alt="" />
     <h4>UI/UX Design</h4>
-      <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Possimus, ipsum cupiditate! Blanditiis enim asperiores labore praesentium ipsum nihil maiores quos veniam. Alias eveniet ipsum reiciendis maiores quam laboriosam fugit. Officiis.
+      <p>
+        Designing unique and eye catching user interface for your website
       </p>
   </div>
 )

@@ -176,8 +176,7 @@
 @media screen and (max-width:768px){
     
     .cardss{
-        display: grid; 
-
+    display: grid; 
    grid-template-rows: 1fr 1fr 1fr;
    grid-template-columns: 1fr;
    
@@ -186,20 +185,25 @@
     }
 
     .card1{
+        width: 70%;
         grid-row-start: 1;
         grid-column-start: 1;
-     
+        
         grid-row-end: 2;
         grid-column-end: 2;
     }
     .card2{
+        width: 70%;
+        
         grid-row-start: 2;
         grid-column-start: 1;
-     
+        
         grid-row-end: 3;
         grid-column-end: 2;
+        word-wrap: break-word;
     }
     .card3{
+        width: 70%;
         grid-row-start: 3;
         grid-column-start: 1;
      
@@ -212,4 +216,8 @@
     .card3{
         text-align: center;
     }
+
+    /* .card2 p {
+        word-wrap: break-word;
+    } */
 }

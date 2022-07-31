@@ -53,16 +53,30 @@
 }
 
 
-@media  screen and (max-width : 1200px) {
+@media  screen and (max-width : 768px) {
     .about{
         display: flex;
         flex-direction: column;
         justify-content: center;
         align-items: center;
+        padding-bottom: 4rem;
     }
 
     .aboutright{
         padding-top: 4rem;
+    }
+
+    .aboutleft{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        padding-right: 4rem;
+    }
+
+    .aboutleft h1 {
+       font-size: 1.7rem;
+       text-align: left;
     }
    
 }

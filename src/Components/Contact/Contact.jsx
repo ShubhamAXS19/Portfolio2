@@ -15,7 +15,7 @@ const Contact = () => {
           <FaPaperPlane size={100} color="gray"/>
       </div>
 
-        <div className={styles.card}>
+        <div className={styles.contactinfo}>
             <div><p>Get In Touch</p></div>
             <p><Link to="/sv09734@gmail.com">sv09734@gmail.com</Link></p>
             <div className={styles.reachout}>

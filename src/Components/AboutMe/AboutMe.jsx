@@ -10,8 +10,7 @@ const AboutMe = () => {
         <h1>About Me</h1>
         
         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorem fugiat autem harum 
-          deleniti similique quis placeat iusto. Quis, explicabo animi! Ex, commodi temporibus
-          exercitationem autem distinctio similique iste cum cupiditate!
+          
         </p>
           <Link to="/"> <button>  View Resume </button> </Link>
       </div>
