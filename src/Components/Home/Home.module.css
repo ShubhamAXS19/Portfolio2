@@ -3,7 +3,7 @@
     align-items: center;
     justify-content: space-evenly;
     background-color: #21243e;
-    padding: 5rem 3rem 3rem 3rem;
+    padding: 15rem 3rem 3rem 3rem;
 }
 
 .homeright{
@@ -22,7 +22,7 @@
 
 .homeright img{
     height: 13rem;
-    width: 13rem;
+    width: 12rem;
     clip-path: circle(50%);
     background-color: #ade8f4;
     overflow: hidden;

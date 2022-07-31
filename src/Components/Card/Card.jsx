@@ -11,9 +11,9 @@ const Card = () => {
   return (
     <div className={styles.carddisplay}>
       <div className={styles.innercard}>
-          <img src={Image} alt="" />
+          <img src={Image} alt="projectimage" />
           <div> 
-            <Link to="/</div>"> <AiFillGithub size={40} /></Link>
+            <Link to="/"> <AiFillGithub size={40} /></Link>
             <Link to="/"> <BiLinkAlt size={40} /></Link>
           </div>
             <p >
@@ -22,7 +22,7 @@ const Card = () => {
               exercitationem praesentium nihil.
             </p>
             
-        <div className={styles.feature}>
+        <div className={styles.cardstack}>
           <p>photography</p>
           <p>travel</p>
           <p>winter</p>

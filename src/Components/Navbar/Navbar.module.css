@@ -5,8 +5,8 @@
     justify-content: space-between;
     padding: 1rem 2rem 1rem 2rem;
     background-color: #21243e;
-    
-    border-bottom: 2px solid rgb(194, 207, 197);
+    z-index: 10;
+    box-shadow: rgb(38, 57, 77) 0px 20px 30px -10px;
 
     position: fixed;
   top: 0;
@@ -19,12 +19,36 @@
     align-items:center;
     justify-content: space-evenly;
     gap: 3rem;
+ 
 }
 
 .navright1 ul li{
     list-style: none;
     font-size: 1.8rem;
+    
+    display: inline-block;
+    position: relative;
 }
+
+.navright1 ul li::after{
+    content: '';
+    position: absolute;
+    width: 100%;
+    transform: scaleX(0);
+    border-radius: 2px;
+    height: 4px;
+    bottom: 0;
+    left: 0;
+    background-color: #0087ca;
+    transform-origin: bottom center;
+    transition: transform 0.25s ease-out;
+}
+
+.navright1 ul li:hover:after{
+    transform: scaleX(1);
+    transform-origin: bottom center;
+}
+
 
 .navright1 ul li a{
     color: #c2cfc5;

@@ -24,10 +24,10 @@
    padding-right: 3rem;
 
 
-
+        /* hover animation */
    position: relative;
   overflow: hidden;
-  max-width: 300px;
+  max-width: 25rem;
   z-index: 1;
 }
 
@@ -53,7 +53,9 @@
     border-radius: 2rem;
     transition: all 0.5s;
 
-    transition: .5s ease all; width: 100%; object-fit:cover;
+   transition: .5s ease all; 
+   width: 100%; 
+   object-fit:cover;
 }
 
 .leftdis:hover img {
