@@ -177,6 +177,8 @@
     
     .cardss{
     display: grid; 
+    justify-content: center;
+    align-items: center;
    grid-template-rows: 1fr 1fr 1fr;
    grid-template-columns: 1fr;
    
