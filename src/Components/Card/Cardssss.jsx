@@ -39,10 +39,12 @@ const Card3 = () => (
 
 const Cardssss = () => {
   return (
-    <div className={styles.cardss}>
+    <div className={styles.cardover}>
+        <div className={styles.cardss}>
      <Card1/>
      <Card2/>
      <Card3/>
+    </div>
     </div>
   )
 }

@@ -1,65 +1,66 @@
-// import React,{useState} from 'react'
-// // import styles from './Skills.module.css'
-// import {AiFillHtml5} from 'react-icons/ai'
-// import {DiCss3} from 'react-icons/di'
-// import {GrReactjs} from 'react-icons/gr'
-// import {FaBootstrap} from 'react-icons/fa'
-// import {BsGithub} from 'react-icons/bs'
-// import {SiRedux} from 'react-icons/si'
-// import { SiMaterialui } from 'react-icons/si'
+import React from 'react'
+import styles from './Skills.module.css'
+import { Swiper, SwiperSlide } from "swiper/react";
 
-// import { useSprings, animated, to } from 'react-spring'
-// import { useGesture } from '@use-gesture/react'  
-
-// const cards = [
-//         <AiFillHtml5 size={150} color="orange"/>,
-//         <DiCss3 size={150}  color="darkblue"/>,
-//         <FaBootstrap size={150}  color="darkviolet"/>,
-//         <GrReactjs size={150}  color="blue"/>,
-//         <SiRedux size={150}  color="purple"/>,
-//         <BsGithub size={150}  color=""/>,
-//         <SiMaterialui size={150}  color="blue"/>,
-// ]
+// Import Swiper styles
+import "swiper/css";
+import "swiper/css/pagination";
+import "swiper/css/navigation";
 
 
-// const To = i => ({ x: 0, y: i * -4, scale: 1, rot: -10 + Math.random() * 20, delay: i * 100 })
-// const From = i => ({ x: 0, rot: 0, scale: 1.5, y: -1000 })
-// // This is being used down there in the view, it interpolates rotation and scale into a css transform
-// const trans = (r, s) => `perspective(1500px) rotateX(30deg) rotateY(${r / 10}deg) rotateZ(${r}deg) scale(${s})`
 
-// const Skills = () => {
+import {ImHtmlFive } from 'react-icons/im'
+import { SiCss3} from 'react-icons/si'
+import { SiJavascript} from 'react-icons/si'
+import { FaReact} from 'react-icons/fa'
+import {SiReactrouter} from 'react-icons/si'
+import {SiRedux} from 'react-icons/si'
+import {FaBootstrap} from 'react-icons/fa'
+import { SiNetlify} from 'react-icons/si'
+import {BsGithub} from 'react-icons/bs'
+import { FaGitAlt} from 'react-icons/fa'
+import { SiFramer} from 'react-icons/si'
+import {SiSwiper } from 'react-icons/si'
+import { } from 'react-icons/'
 
-//   const [gone] = useState(() => new Set()) // The set flags all the cards that are flicked out
-//   const [props, set] = useSprings(cards.length, i => ({ ...To(i), From: From(i) })) // Create a bunch of springs using the helpers above
-//   // Create a gesture, we're interested in down-state, delta (current-pos - click-pos), direction and velocity
-//   const bind = useGesture(({ args: [index], down, delta: [xDelta], distance, direction: [xDir], velocity }) => {
-//     const trigger = velocity > 0.2 // If you flick hard enough it should trigger the card to fly out
-//     const dir = xDir < 0 ? -1 : 1 // Direction should either point left or right
-//     if (!down && trigger) gone.add(index) // If button/finger's up and trigger velocity is reached, we flag the card ready to fly out
-//     set(i => {
-//       if (index !== i) return // We're only interested in changing spring-data for the current spring
-//       const isGone = gone.has(index)
-//       const x = isGone ? (200 + window.innerWidth) * dir : down ? xDelta : 0 // When a card is gone it flys out left or right, otherwise goes back to zero
-//       const rot = xDelta / 100 + (isGone ? dir * 10 * velocity : 0) // How much the card tilts, flicking it harder makes it rotate faster
-//       const scale = down ? 1.1 : 1 // Active cards lift up a bit
-//       return { x, rot, scale, delay: undefined, config: { friction: 50, tension: down ? 800 : isGone ? 200 : 500 } }
-//     })
-//     if (!down && gone.size === cards.length) setTimeout(() => gone.clear() || set(i => To(i)), 600)
-//   })
+import { Autoplay, Pagination, Navigation } from "swiper";
 
-//   return (
-    
 
-//     <div>
-//             <h1>Skills</h1>
-//       props.map(({ x, y, rot, scale }, i) => (
-//     <animated.div key={i} style={{ transform: to([x, y], (x, y) => `translate3d(${x}px,${y}px,0)`) }}>
-//       <animated.div {...bind(i)} style={{ transform: to([rot, scale], trans), 
-//         backgroundImage: `url(${cards[i]})` }} />
-//     </animated.div>
-//   ))
+const Skills = () => {
+  return (
+    <div className={styles.skills}>
+      <Swiper
+      slidesPerView={1}
+      loop={true}
+        spaceBetween={30}
+        centeredSlides={true}
+        autoplay={{
+          delay: 1000,
+          disableOnInteraction: false,
+        }}
+        pagination={{
+          el: ".swiper-pagination",
+          clickable: true,
+        }}
+        navigation={true}
+        modules={[Autoplay, Pagination, Navigation]}
+        className="mySwiper"
+      >
+        <SwiperSlide className={styles.swiperslide}> <ImHtmlFive color='orange'/> </SwiperSlide>
+        <SwiperSlide className={styles.swiperslide}> <SiCss3 color='blue'/> </SwiperSlide>
+        <SwiperSlide className={styles.swiperslide}> <SiJavascript color='orange'/></SwiperSlide>
+        <SwiperSlide className={styles.swiperslide}> <FaBootstrap color='violet'/> </SwiperSlide>
+        <SwiperSlide className={styles.swiperslide}><SiFramer color='black'/> </SwiperSlide>
+        <SwiperSlide className={styles.swiperslide}><SiSwiper color='darkblue'/> </SwiperSlide>
+        <SwiperSlide className={styles.swiperslide}> <FaReact color='blue'/> </SwiperSlide>
+        <SwiperSlide className={styles.swiperslide}><SiReactrouter color='brown'/></SwiperSlide>
+        <SwiperSlide className={styles.swiperslide}><SiRedux color='purple'/> </SwiperSlide>
+        <SwiperSlide className={styles.swiperslide}> <BsGithub color='grey' /> </SwiperSlide>
+        <SwiperSlide className={styles.swiperslide}> <SiNetlify color='blue'/> </SwiperSlide>
+        <SwiperSlide className={styles.swiperslide}><FaGitAlt color='red'/></SwiperSlide>
+      </Swiper>
+    </div>
+  )
+}
 
-//   </div>
-// )
-//       }
-// export default Skills
+export default Skills

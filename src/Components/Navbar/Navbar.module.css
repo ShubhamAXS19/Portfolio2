@@ -76,11 +76,10 @@
         width: 100%;
         position: fixed;
         top: 0;
-        display: none;
+        /* display: none; */
     }
     
-    
-    
+
     .navleft1{
         display: none;
     }
@@ -88,32 +87,14 @@
         display: none;
     }
     
-
-    .navright2  {
-        width: 50%;
-
-    }
-
-    .navright2 ul {
-        display: flex;
-        align-items: center;
-        justify-content: flex-start;
-        padding-right: 5rem;
-
-    }
-    .navright2 ul li{
+    .mobilenav ul {
         list-style: none;
+        display: flex;
+        /* justify-content: space-between; */
+        align-items: center;
+        column-gap: 2rem;
     }
-
-    .navright2 ul li svg{
-        margin-left:1rem ;
-        margin-right: 1rem;
-        color: #c2cfc5;
-        transition: all 0.5s;
-    }
-    .navright2 ul li svg:hover{
-        color:rgb(67, 97, 238) ;
-    }
-
+    
+    
 
 }
