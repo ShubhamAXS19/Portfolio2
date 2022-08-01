@@ -4,11 +4,20 @@
     align-items: center;
     justify-content: space-evenly;
     width: 100%;
+
 }
 
-.project h1 {
+.rightdis{
+    text-align: start;
+}
+
+
+.rightdis h1 {
     color: white;
     font-size: 3rem;
+    text-decoration: underline;
+    text-underline-offset: 15px;
+    text-decoration-color: #0087ca;
 }
 
 .leftdis{
@@ -158,6 +167,7 @@
 
      .rightdis h1 {
         text-align: left;
+        font-size: 1.5rem;
      }
      
 }

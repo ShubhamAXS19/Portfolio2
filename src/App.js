@@ -8,7 +8,6 @@ import Projectpage from './Containers/Projectpage';
 
 
 
-
 export const ThemeContext = createContext(null);
 
 
@@ -22,6 +21,7 @@ function App() {
 
   return (
     
+      
     <ThemeContext.Provider value={{theme,ToggleTheme}}>
 
      <div className="app" id={theme}>
@@ -29,10 +29,10 @@ function App() {
                 <Route path='/' element={<MainPage/>}/>
                 <Route path='/allprojects' element={<Projectpage/>}/>
             </Routes>
-      
     </div>
 
    </ThemeContext.Provider>
+    
    
   );
 }

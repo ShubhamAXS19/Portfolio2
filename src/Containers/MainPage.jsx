@@ -8,12 +8,11 @@ import Contact from '../Components/Contact/Contact';
 import Project from '../Components/Projects/Project';
 
 
-
 const MainPage = () => {  
 
   return (
         <div>
-            
+
             <Navbar/>
             <Home/>
             <AboutMe/>
@@ -21,7 +20,7 @@ const MainPage = () => {
             <Project/>
             <Contact/>
             <Footer/>
-            
+
         </div>
     )
 }

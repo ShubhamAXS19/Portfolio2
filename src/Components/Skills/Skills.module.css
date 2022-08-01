@@ -5,6 +5,13 @@
     background-color: #00193b;
 }
 
+.skills h1{
+    text-align: center;
+    padding-bottom: 3rem;
+    text-decoration: underline;
+    text-underline-offset: 15px;
+    text-decoration-color: #0087ca;
+}
 
  .swiperslide{
      text-align: center;
