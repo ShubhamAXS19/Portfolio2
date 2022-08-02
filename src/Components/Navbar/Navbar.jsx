@@ -28,7 +28,10 @@ const Navbar = () => {
                   <li> <Link to="/#about"> About</Link> </li>
                   <li> <Link to="/allprojects"> Projects</Link></li>
                   <li> <Link to="/#contact"> Contact</Link> </li>
-                  <li><MdDarkMode size={50} style={{cursor:"pointer"}}/></li>
+                  <li>
+                    {light ? <MdDarkMode size={40} style={{cursor:"pointer"}} color="black" onClick = {() => setLight(false)}/> :
+                         <FiSun size={40} style={{cursor:"pointer"}} color="white" onClick={() => setLight(true)} />}
+                  </li>
                   <li><Link to="https://github.com/ShubhamAXS19"><BsGithub size={30}/></Link></li>
                   </ul>
               </div>

@@ -77,6 +77,8 @@
         align-items:center ;
         justify-content: space-between;
         padding: 1rem 2rem 1rem 2rem;
+
+        z-index: 1000;
     }
     
     .navbar1{
@@ -109,20 +111,21 @@
 
     .sidebar{
         width: 100%;
-        height: 100vh;
+        height: 100%;
         position: fixed;
         top: 0;
         left: 0;
         background-color: #21243e;
-        z-index: 20;
         transition: ease-in 0.5s;
+        z-index: 20;
     }
     .sidebar ul {
         display: flex;
         flex-direction: column;
         align-items: center;
         justify-content: center;
-        z-index: 1000;
+        gap: 2rem;
+    
     }
 
     .sidebar ul li a{

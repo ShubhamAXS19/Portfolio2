@@ -9,7 +9,7 @@ const Home = () => {
     <div className={styles.home}>
     <div className={styles.homeright}>
     {/* {sidebar ? null :<img src={HomePic} alt="" /> } */}
-    
+    <img src={HomePic} alt="" />
 
     <p>Shubham Vishwakarma</p>
     <p>Front-end Developer, UI/UX Enthusiast, Data Science Enthusiast</p>

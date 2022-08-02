@@ -54,16 +54,16 @@ h1,h2{
     }
     .homeright{
         width: 15rem;
-        /* padding-top: -10rem; */
         display: flex;
         flex-direction: column;
         justify-content: space-evenly;
+        
     }
     
     .homeright img {
+        z-index: 1;
         height: 10rem;
         width: 9rem;
-        z-index: 10;
         /* display: none; */
     }
 
