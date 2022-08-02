@@ -7,9 +7,10 @@ import HomePic from '../../img/i01_homepic.png'
 const Home = () => {
   return (
     <div className={styles.home}>
-
     <div className={styles.homeright}>
-    <img src={HomePic} alt="" />
+    {/* {sidebar ? null :<img src={HomePic} alt="" /> } */}
+    
+
     <p>Shubham Vishwakarma</p>
     <p>Front-end Developer, UI/UX Enthusiast, Data Science Enthusiast</p>
     </div>

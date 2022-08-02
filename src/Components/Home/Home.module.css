@@ -59,10 +59,12 @@ h1,h2{
         flex-direction: column;
         justify-content: space-evenly;
     }
-
+    
     .homeright img {
         height: 10rem;
         width: 9rem;
+        z-index: 10;
+        /* display: none; */
     }
 
     .homeright p {
