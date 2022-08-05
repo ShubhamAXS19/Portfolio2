@@ -38,7 +38,7 @@ const Navbar = () => {
                     {light ? <MdDarkMode size={40} style={{cursor:"pointer"}} color="black" onClick = {() => setLight(false)}/> :
                          <FiSun size={40} style={{cursor:"pointer"}} color="white" onClick={() => setLight(true)} />}
                   </li>
-                  <li><Link to="/" ><BsGithub size={30} onClick={NavigatetoGithub}/></Link></li>
+                  <li><Link to="https://github.com/ShubhamAXS19" ><BsGithub size={30} onClick={NavigatetoGithub}/></Link></li>
                   </ul>
               </div>
 
