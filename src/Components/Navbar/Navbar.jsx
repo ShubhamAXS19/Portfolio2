@@ -1,5 +1,5 @@
-import React, { useState,useNavigate } from 'react';
-import { Link } from 'react-router-dom';
+import React, { useState } from 'react';
+import { Link,useNavigate } from 'react-router-dom';
 import styles from './Navbar.module.css';
 import {BsGithub} from 'react-icons/bs'
 import {MdDarkMode} from 'react-icons/md'
@@ -38,7 +38,7 @@ const Navbar = () => {
                     {light ? <MdDarkMode size={40} style={{cursor:"pointer"}} color="black" onClick = {() => setLight(false)}/> :
                          <FiSun size={40} style={{cursor:"pointer"}} color="white" onClick={() => setLight(true)} />}
                   </li>
-                  <li><Link to="https://github.com/ShubhamAXS19" onClick={NavigatetoGithub}><BsGithub size={30}/></Link></li>
+                  <li><Link to="/" ><BsGithub size={30} onClick={NavigatetoGithub}/></Link></li>
                   </ul>
               </div>
 
