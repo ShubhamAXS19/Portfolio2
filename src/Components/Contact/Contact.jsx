@@ -19,9 +19,9 @@ const Contact = () => {
             <div><p>Get In Touch</p></div>
             <p><Link to="/sv09734@gmail.com">sv09734@gmail.com</Link></p>
             <div className={styles.reachout}>
-                <Link to="/"> <BiMailSend size={40}/> </Link>
-                <Link to="/"> <FaLinkedinIn size={40}/> </Link>
-                <Link to="/"> <BsInstagram size={40}/> </Link>
+                <a href="sv773460@gmail.com"> <BiMailSend size={40}/> </a>
+                <a href="/https://www.linkedin.com/"> <FaLinkedinIn size={40}/> </a>
+                <a href="/https://www.instagram.com/"> <BsInstagram size={40}/> </a>
             </div>
         </div>
 

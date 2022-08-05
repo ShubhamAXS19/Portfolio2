@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { Link,useNavigate } from 'react-router-dom';
+import { Link } from 'react-router-dom';
 import styles from './Navbar.module.css';
 import {BsGithub} from 'react-icons/bs'
 import {MdDarkMode} from 'react-icons/md'
@@ -7,20 +7,17 @@ import {TiThMenu} from 'react-icons/ti'
 import {GrFormClose} from 'react-icons/gr'
 import {FiSun} from 'react-icons/fi'
 import SmallNav from '../../img/navicon.png'
+import { useThemeContext } from '../../Context/ContextProvider';
 
 
 const Navbar = () => {
 
-  const navigate = useNavigate();
-
-  const NavigatetoGithub = () => {
-    navigate('https://github.com/ShubhamAXS19')
-  }
+  const {lightTheme , turningOnLightTheme} = useThemeContext();
 
   const [sidebar, setSidebar] = useState(false)
-  const [light ,setLight] =useState(true)
+  const [light ,setLight] =useState(false)
   return (
-<div className={styles.navbar}>
+<div className={styles.navbar} id={lightTheme}>
 
        <div className={styles.navbar1}>
 
@@ -30,15 +27,15 @@ const Navbar = () => {
 
               <div className={styles.navright1}>
                   <ul>
-                  <li> <Link to="/#home"> Home</Link></li>
-                  <li> <Link to="/#about"> About</Link> </li>
+                  <li> <Link to="/"> Home</Link></li>
+                  <li> <Link to="/"> About</Link> </li>
                   <li> <Link to="/allprojects"> Projects</Link></li>
-                  <li> <Link to="/#contact"> Contact</Link> </li>
-                  <li>
-                    {light ? <MdDarkMode size={40} style={{cursor:"pointer"}} color="black" onClick = {() => setLight(false)}/> :
+                  <li> <Link to="/"> Contact</Link> </li>
+                  {/* <li>
+                    {light ? <MdDarkMode size={40} style={{cursor:"pointer"}} color="black" onClick = {() => setLight(false)} onChange={turningOnLightTheme} /> :
                          <FiSun size={40} style={{cursor:"pointer"}} color="white" onClick={() => setLight(true)} />}
-                  </li>
-                  <li><Link to="https://github.com/ShubhamAXS19" ><BsGithub size={30} onClick={NavigatetoGithub}/></Link></li>
+                  </li> */}
+                  <li><a href="https://github.com/ShubhamAXS19"><BsGithub size={30} /></a></li>
                   </ul>
               </div>
 

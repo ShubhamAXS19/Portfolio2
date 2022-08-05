@@ -1,9 +1,11 @@
 import React from 'react'
-import { Link } from 'react-router-dom'
+import ProjectInfo from '../AllProject/ProjectInfo'
 import Card from '../Card/Card'
 import styles from './AllProject.module.css'
 
+
 const AllProjects = () => {
+  // const navigate = useNavigate();
   return (
     <div className={styles.projectlist}>
 
@@ -14,14 +16,15 @@ const AllProjects = () => {
       <p>you may check out github for a more up to date list</p>
 
 
-     <Link to="/github.com/ShubhamAXS19"> 
+     <a href='https://github.com/ShubhamAXS19'> 
       <button> View on Github</button> 
-      </Link>
+      </a>
      </div>
 
-      <Card/>
-      <Card/>
-      <Card/>
+      <Card Gitlink={ProjectInfo[0][0]} Hostlink={ProjectInfo[0].hostlink}/>
+      <Card Gitlink={ProjectInfo[1].gitlink} Hostlink={ProjectInfo[1].hostlink}/>
+      <Card />
+      
      
      
     </div>
