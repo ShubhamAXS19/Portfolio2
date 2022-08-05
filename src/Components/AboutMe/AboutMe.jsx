@@ -12,7 +12,12 @@ const AboutMe = () => {
         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorem fugiat autem harum 
           
         </p>
-          <Link to="https://drive.google.com/file/d/1ohSq65gnakWtsNGp8cIaxdAsTJLNG0Ab/view?usp=sharing"> <button>  View Resume </button> </Link>
+          <Link to="/"> 
+          <a href="https://drive.google.com/file/d/1ohSq65gnakWtsNGp8cIaxdAsTJLNG0Ab/view?usp=sharing">
+
+          <button>  View Resume </button>
+          </a>
+           </Link>
       </div>
       
       <div className={styles.aboutright}>
