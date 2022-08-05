@@ -58,10 +58,10 @@ const Navbar = () => {
                 <div className={styles.sidebar}>
                   <GrFormClose onClick={() => setSidebar(false)}/>
                   <ul>
-                  <li> <Link to="/#home"> Home</Link></li>
-                  <li> <Link to="/#about"> About</Link> </li>
+                  <li> <Link to="/home" > Home </Link></li>
+                  <li> <Link to="/about"> About</Link> </li>
                   <li> <Link to="/allprojects"> Projects</Link></li>
-                  <li> <Link to="/#contact"> Contact</Link> </li>
+                  <li> <Link to="/contact"> Contact</Link> </li>
                   </ul>
                 </div>
               )

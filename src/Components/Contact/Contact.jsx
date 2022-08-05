@@ -8,7 +8,7 @@ import {FaPaperPlane} from 'react-icons/fa'
 
 const Contact = () => {
   return (
-    <div className={styles.contact}>
+    <div className={styles.contact} id="contacts">
 
       <div className={styles.wrapper}>
       <div className={styles.icon1}>
