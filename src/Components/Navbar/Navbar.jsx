@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useState,useNavigate } from 'react';
 import { Link } from 'react-router-dom';
 import styles from './Navbar.module.css';
 import {BsGithub} from 'react-icons/bs'
@@ -10,6 +10,12 @@ import SmallNav from '../../img/navicon.png'
 
 
 const Navbar = () => {
+
+  const navigate = useNavigate();
+
+  const NavigatetoGithub = () => {
+    navigate('https://github.com/ShubhamAXS19')
+  }
 
   const [sidebar, setSidebar] = useState(false)
   const [light ,setLight] =useState(true)
@@ -32,7 +38,7 @@ const Navbar = () => {
                     {light ? <MdDarkMode size={40} style={{cursor:"pointer"}} color="black" onClick = {() => setLight(false)}/> :
                          <FiSun size={40} style={{cursor:"pointer"}} color="white" onClick={() => setLight(true)} />}
                   </li>
-                  <li><Link to="https://github.com/ShubhamAXS19"><BsGithub size={30}/></Link></li>
+                  <li><Link to="https://github.com/ShubhamAXS19" onClick={NavigatetoGithub}><BsGithub size={30}/></Link></li>
                   </ul>
               </div>
 
